@@ -1,0 +1,16 @@
+.inputs-group {
+  display: grid;
+  border: none;
+  padding: 0;
+
+  &_direction_row {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.6rem;
+    align-items: center;
+  }
+
+  &_direction_column {
+    grid-template-rows: min-content min-content;
+    row-gap: 2.4rem;
+  }
+}

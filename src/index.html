@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <svg width="0" height="0" class="hidden" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="delete" stroke="inherit" viewBox="0 0 16 17" fill="none">
+        <path d="M2 4.00195H3.33333H14" stroke="inherit" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M5.33337 4.00187V2.66854C5.33337 2.31492 5.47385 1.97578 5.7239 1.72573C5.97395 1.47568 6.31309 1.33521 6.66671 1.33521H9.33337C9.687 1.33521 10.0261 1.47568 10.2762 1.72573C10.5262 1.97578 10.6667 2.31492 10.6667 2.66854V4.00187M12.6667 4.00187V13.3352C12.6667 13.6888 12.5262 14.028 12.2762 14.278C12.0261 14.5281 11.687 14.6685 11.3334 14.6685H4.66671C4.31309 14.6685 3.97395 14.5281 3.7239 14.278C3.47385 14.028 3.33337 13.6888 3.33337 13.3352V4.00187H12.6667Z"
+          stroke="inherit"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path d="M6.66663 7.33521V11.3352" stroke="inherit" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M9.33337 7.33521V11.3352" stroke="inherit" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="add" viewBox="0 0 18 18" stroke="inherit" fill="none">
+        <path d="M17 9.00488H1" stroke="#inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M9 1.00488V17.0049"
+          stroke="#inherit"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+    </svg>
+    <header class="header"></header>
+    <main class="content">
+      <aside class="aside"></aside>
+      <section class="controls">
+        <div class="controls__header">
+          <h1 class="controls__title">Учебное заведение</h1>
+          <button form="form" type="submit" class="button controls__button">Сохранить</button>
+        </div>
+        <!-- /.controls__header -->
+        <div class="controls__wrap">
+          <form id="form" action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+            <fieldset class="form__input-group">
+              <legend class="form__title">Специальность</legend>
+              <fieldset class="inputs-group inputs-group_direction_row">
+                <label class="input">
+                  <input name="specialty " type="text" class="input__item" placeholder="Введите текст" />
+                </label>
+                <label class="input input_vertical_centered">
+                  <input
+                    name="institution-of-st-petersburg"
+                    value="true"
+                    type="checkbox"
+                    class="inpt__item input__item_type_checkbox"
+                  />
+                  <span class="input__text">Высшее учебное заведение Санкт-Петербурга</span>
+                </label>
+              </fieldset>
+            </fieldset>
+            <fieldset class="form__input-group">
+              <legend class="form__title">Заведение</legend>
+              <fieldset class="inputs-group inputs-group_direction_column">
+                <label class="input">
+                  <input name="institution" type="text" class="input__item" placeholder="Введите текст" />
+                </label>
+                <label class="input input_vertical_centered">
+                  <input
+                    name="magistracy"
+                    value="true"
+                    type="checkbox"
+                    class="inpt__item input__item_type_checkbox"
+                    checked
+                  />
+                  <span class="input__text">Магистратура учебного заведения</span>
+                </label>
+              </fieldset>
+            </fieldset>
+
+            <span id="init-fieldset"></span>
+
+            <fieldset class="diapason form__input-group">
+              <legend class="form__title">Диапазон</legend>
+              <input
+                name="diapason-start"
+                type="number"
+                id="counter-left"
+                min="0"
+                max="100"
+                value="25"
+                class="diapason__counter"
+              />
+              <div class="diapason__multi-range">
+                <div class="diapason__slider">
+                  <input class="button diapason__range" type="range" id="range-left" min="0" max="100" value="25" />
+                  <input class="button diapason__range" type="range" id="range-right" min="0" max="100" value="75" />
+                  <div class="diapason__track"></div>
+                  <div id="range-bar" class="diapason__range-bar"></div>
+                  <div id="thumb-left" class="diapason__thumb diapason__thumb_position_left"></div>
+                  <div id="thumb-right" class="diapason__thumb diapason__thumb_position_right"></div>
+                </div>
+                <!-- /.diapason__slider -->
+              </div>
+              <!-- /.diapason__multi-range -->
+              <input
+                name="diapason-end"
+                type="number"
+                id="counter-right"
+                min="0"
+                max="100"
+                value="75"
+                class="diapason__counter"
+              />
+            </fieldset>
+          </form>
+          <div class="content__theme">
+            <p class="content__title">Выбор темы</p>
+            <div id="tabs" class="content__tabs-wrap">
+              <button data-set-theme="light" class="button content__tab content__tab_active">Светлая</button>
+              <span class="content__tabs-divider"></span>
+              <button data-set-theme="dark" class="button content__tab">Темная</button>
+            </div>
+            <!-- /.content__tabs-wrap -->
+          </div>
+          <!-- /.content__theme -->
+        </div>
+        <!-- /.controls__wrap -->
+      </section>
+    </main>
+  </body>
+</html>

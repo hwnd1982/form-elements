@@ -1,0 +1,10 @@
+.diapason__range-bar {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  background-color: var(--decor-color);
+  transition: all .1s ease-in-out;
+}

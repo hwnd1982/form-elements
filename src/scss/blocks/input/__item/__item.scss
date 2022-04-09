@@ -1,0 +1,43 @@
+.input__item {
+  width: 100%;
+  padding: 1.4rem 1.6rem;
+  border: 0.1rem solid var(--decor-color);
+  border-radius: 0.4rem;
+  outline: none;
+  color: var(--elem-bgcolor-disabled);
+  background-color: transparent;
+  @include font(400, 1.4rem, 143%);
+
+  &_type_checkbox {
+    outline: none;
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.2rem;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-52%, -48%);
+      width: 1.2rem;
+      height: 1.2rem;
+      border: 0.15rem solid var(--decor-color);
+      background-color: var(--elem-bgcolor);
+      border-radius: 0.4rem;
+    }
+
+    &:checked::after {
+      border-color: var(--button-bgcolor);
+      background-color: var(--button-bgcolor);
+      background-image: var(--check);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.error .input__item {
+  border: 0.1rem solid var(--asterisk);
+}

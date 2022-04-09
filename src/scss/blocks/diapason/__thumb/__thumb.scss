@@ -1,0 +1,32 @@
+.diapason__thumb {
+  position: absolute;
+  z-index: 3;
+  width: 1.2rem;
+  height: 4rem;
+  background-color: var(--button-bgcolor);
+  box-shadow: 0 0.1rem 0.4rem rgba(59, 67, 87, 0.1);
+  border-radius: 0.2rem;
+  transition: all .1s ease-in-out;
+
+  &_position_left {
+    left: 25%;
+    transform: translate(-0.5rem, -1rem);
+  }
+
+  &_position_right {
+    right: 25%;
+    transform: translate(0.5rem, -1rem);
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 0.4rem;
+    height: 2rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--elem-bgcolor);
+    border-radius: 0.1rem;
+  }
+}

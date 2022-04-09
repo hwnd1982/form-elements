@@ -1,0 +1,13 @@
+.error {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    content: attr(data-text-error);
+    color: var(--asterisk);
+    @include font(400, 1.2rem, 1.6rem)
+  }
+}

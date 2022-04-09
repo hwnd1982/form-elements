@@ -1,0 +1,22 @@
+.academic-titles-cart__state-switcher {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  top: 0;
+  right: 0;
+  width: 2.8rem;
+  height: 1.6rem;
+  background-color: var(--button-bgcolor);
+  border-radius: 2rem;
+  justify-content: flex-end;
+
+  &::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--elem-bgcolor);
+  }
+}

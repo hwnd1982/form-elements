@@ -1,0 +1,12 @@
+.input__name {
+  display: flex;
+  align-items: center;
+  @include font(400, 1.4rem, 114%);
+  margin-bottom: 0.8rem;
+  
+  &_required::after {
+    content: '*';
+    @include font(700, 2rem, 80%);
+    color: var(--asterisk);
+  }
+}

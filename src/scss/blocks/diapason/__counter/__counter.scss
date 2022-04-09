@@ -1,0 +1,18 @@
+.diapason__counter {
+  outline: none;
+  background: var(--elem-bgcolor);
+  border: 0.1rem solid var(--decor-color);
+  color: var(--text-color-main);
+  border-radius: 0.4rem;
+  padding: 1.4rem 1.6rem;
+
+  @include font(400, 1.4rem, 143%);
+
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

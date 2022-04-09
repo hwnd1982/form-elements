@@ -1,0 +1,27 @@
+@import '__inputs-group/__inputs-group';
+@import '__input/__input';
+@import '__button-delete/__button-delete';
+@import '__state-switcher/__state-switcher';
+@import '__button-delete-icon/__button-delete-icon';
+@import '__button-add/__button-add';
+@import '__button-add-icon/__button-add-icon';
+@import '__button-add-text/__button-add-text';
+
+.academic-titles-cart {
+  position: relative;
+  
+  &:disabled &__state-switcher {
+    background-color: var(--elem-bgcolor-disabled);
+    justify-content: flex-start;
+  }
+
+  &:disabled &__button-add {
+    border-color: var(--track-bgcolor);
+    color: var(--elem-bgcolor-disabled);
+  }
+
+  &:disabled &__button-add-icon {
+    stroke: var(--elem-bgcolor-disabled);
+  }
+}
+

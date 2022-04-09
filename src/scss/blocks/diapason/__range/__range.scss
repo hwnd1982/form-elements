@@ -1,0 +1,20 @@
+.diapason__range {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  right: -0.5rem;
+  left: -0.5rem;
+  z-index: 20;
+  height: 2rem;
+  opacity: 0;
+}
+
+.diapason__range::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 1.2rem;
+  height: 4rem;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}

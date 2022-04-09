@@ -1,0 +1,7 @@
+.controls__button {
+  background-color: var(--button-bgcolor);
+  color: var(--elem-bgcolor);;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.4rem;
+  @include font(700, 1.4rem, 114%);
+}

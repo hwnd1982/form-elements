@@ -1,0 +1,12 @@
+@import '__multi-range/__multi-range';
+@import '__range/__range';
+@import '__slider/__slider';
+@import '__track/__track';
+@import '__thumb/__thumb';
+@import '__range-bar/__range-bar';
+@import '__counter/__counter';
+
+.diapason {
+  display: flex;
+  justify-content: space-between;
+}

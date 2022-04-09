@@ -1,0 +1,35 @@
+:root, [data-theme=light] {
+  --page-bgcolor: #e5e5e5;
+  --button-bgcolor: #a9967d;
+  --button-delete-bgcolor: #ffffff;
+  --button-delete-bgcolor-hover: #fbf5ee;
+  --button-delete-bgcolor-icon: #d14114;
+  --elem-bgcolor: #ffffff;
+  --elem-bgcolor-disabled: #9f9f9f;
+  --controls-theme-bgcolor: #f4f4f4;
+  --text-color-main: #282828;
+  --decor-color: #dad5ce;
+  --decor-border-color: #bcb5ac;
+  --track-bgcolor:#f8f8f8;
+  --asterisk: #d14114;
+  --cursor-pointer: url("../img/cursor-light.svg"), pointer;
+  --check: url("../img/check-light.svg");
+}
+
+[data-theme=dark] {
+  --page-bgcolor: #303a49;
+  --button-bgcolor: #f3c17f;
+  --button-delete-bgcolor: #303a49;
+  --button-delete-bgcolor-hover: #1a2535;
+  --button-delete-bgcolor-icon: #ff7449;
+  --elem-bgcolor: #414e61;
+  --elem-bgcolor-disabled: #7f8995;
+  --controls-theme-bgcolor:#303a49;
+  --text-color-main: #c2c7d0;
+  --decor-color: #2c3645;
+  --decor-border-color: #1c2737;
+  --track-bgcolor: #576375;
+  --asterisk: #ff7449;;
+  --cursor-pointer: url("../img/cursor-dark.svg"), pointer;
+  --check: url("../img/check-dark.svg");
+}

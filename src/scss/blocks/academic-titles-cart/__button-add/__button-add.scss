@@ -1,0 +1,10 @@
+.academic-titles-cart__button-add {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 2rem;  
+  border: 0.1rem solid var(--button-bgcolor);
+  color: var(--button-bgcolor);
+  background-color: transparent;
+  border-radius: 0.4rem;
+  @include font(700, 1.4rem, 114%);
+}
